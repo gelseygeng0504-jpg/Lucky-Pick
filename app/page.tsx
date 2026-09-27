@@ -17,24 +17,25 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 
 const INITIAL_OPTIONS = ['Alice', 'Ben', 'Chloe', 'Daniel', 'Emma', 'Felix'];
+const ASSET_BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 const THEMES = [
   {
-    id: 'lavender', name: 'Lavender', image: '/theme-backgrounds/lavender-field.webp?v=2',
+    id: 'lavender', name: 'Lavender', image: `${ASSET_BASE}/theme-backgrounds/lavender-field.webp?v=2`,
     position: 'center 10%', accent: '#3B328C', hover: '#6B55A9', soft: '#F0EAF8', border: '#D7C9EA',
     colors: ['#3B328C', '#4E3282', '#8E6CBB', '#B69CD2', '#A2CDF3', '#F8C7CE', '#FAE6D6'],
   },
   {
-    id: 'harbor', name: 'Harbor', image: '/theme-backgrounds/sunny-harbor.webp?v=2',
+    id: 'harbor', name: 'Harbor', image: `${ASSET_BASE}/theme-backgrounds/sunny-harbor.webp?v=2`,
     position: 'center 22%', accent: '#BD161B', hover: '#E6401E', soft: '#FFF0E5', border: '#F3C5AC',
     colors: ['#BD161B', '#F2350E', '#FC7D03', '#F2928A', '#E7C96E', '#FCE3B3', '#9FD8DE'],
   },
   {
-    id: 'coral', name: 'Coral', image: '/theme-backgrounds/coral-garden.webp?v=2',
+    id: 'coral', name: 'Coral', image: `${ASSET_BASE}/theme-backgrounds/coral-garden.webp?v=2`,
     position: 'center 25%', accent: '#A81C14', hover: '#D6403C', soft: '#FFF0EF', border: '#EFBEB9',
     colors: ['#541719', '#A81C14', '#DA1A11', '#E86268', '#EEAF9A', '#91C8D3', '#C5DEDC'],
   },
   {
-    id: 'alpine', name: 'Alpine', image: '/theme-backgrounds/alpine-lake.webp?v=2',
+    id: 'alpine', name: 'Alpine', image: `${ASSET_BASE}/theme-backgrounds/alpine-lake.webp?v=2`,
     position: 'center 15%', accent: '#15347B', hover: '#1E7BD3', soft: '#EAF3FC', border: '#BED7EF',
     colors: ['#15347B', '#1543AC', '#255DBA', '#1E7BD3', '#4FA9EB', '#A8D8F9', '#D0EFF5'],
   },

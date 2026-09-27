@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Lucky Pick — Random Student Wheel',
   description: 'A simple random student wheel with three saved class lists.',
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.svg` },
 };
 
 export default function RootLayout({
